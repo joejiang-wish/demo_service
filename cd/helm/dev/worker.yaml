@@ -1,0 +1,43 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: otter-v2-service-worker
+  namespace: wish-micro
+  annotations:
+    fluxcd.io/automated: "true"
+    # This will be changed by Setonix automatically.
+    filter.fluxcd.io/chart-image: "*"
+spec:
+  releaseName: otter-v2-service-worker
+  chart:
+    git: git@github.com:ContextLogic/helm-ms-cn.git
+    path: charts/simple-worker
+    ref: dev
+  values:
+    image:
+      repository: harbor.infra.wish-cn.com/wish/otter-v2-service/api
+      tag: <tag>
+    fullnameOverride: otter-v2-service-worker
+    port: 8889
+    wishAppLabel: otter-v2-service
+    serviceAccount:
+      create: false
+      # If you are using aws resources, e.g. SQS and S3,
+      # please create a Jira ticket to SRE @yiyan to ask for role-arn.
+      #annotations:
+      #  eks.amazonaws.com/role-arn: <role-arn>
+      #  eks.amazonaws.com/audience: sts.amazonaws.com.cn
+    podAnnotations:
+      prometheus.io/scrape: 'true'
+      prometheus.io/port: "8889"
+      co.elastic.logs/enabled: 'true'
+    env:
+      - name: C_FORCE_ROOT
+        value: "True"
+      - name: FLASK_ENV
+        value: dev
+    args:
+      - /bin/bash
+      - -c
+      - "/production/otter_v2_service/current/otter_v2_service/bin/entrypoint-worker.sh"
