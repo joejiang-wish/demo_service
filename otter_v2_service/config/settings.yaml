@@ -51,7 +51,7 @@ default:
 
 
 dev:
-  API_VERSION: 0.0.778
+  API_VERSION: 0.0.3
   logging:
     dynaconf_merge: true
     loggers: {}
@@ -63,7 +63,7 @@ dev:
     dynaconf_merge: true
 
 prod:
-  API_VERSION: 0.0.1
+  API_VERSION: 0.0.673
   # Disable openapi uri for prod env
   OPENAPI_URL_PREFIX:
   extensions:
