@@ -3,5 +3,5 @@ otter-v2-poc:
     adaptor: dynaconf
     hot_update_keys:
         - micro
-        - logging:dynaconf_merge
+        - logging:root:level
         - API_VERSION
