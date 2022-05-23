@@ -56,7 +56,7 @@ dev:
     dynaconf_merge: true
     loggers: {}
     root:
-      level: DEBUG
+      level: INFO
   extensions:
     dynaconf_merge: true
   micro:
