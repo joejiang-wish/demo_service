@@ -53,7 +53,7 @@ default:
 dev:
   API_VERSION: 0.0.2
   logging:
-    dynaconf_merge: true
+    dynaconf_merge: false
     loggers: {}
     root:
       level: DEBUG
