@@ -64,7 +64,7 @@ dev:
   xixi: haha
 
 prod:
-  API_VERSION: 0.0.78
+  API_VERSION: 0.0.72
   # Disable openapi uri for prod env
   OPENAPI_URL_PREFIX:
   extensions:
