@@ -61,9 +61,10 @@ dev:
     dynaconf_merge: true
   micro:
     dynaconf_merge: true
+  xixi: haha
 
 prod:
-  API_VERSION: 0.0.88
+  API_VERSION: 0.0.76
   # Disable openapi uri for prod env
   OPENAPI_URL_PREFIX:
   extensions:
