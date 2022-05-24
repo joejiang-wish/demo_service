@@ -7,7 +7,7 @@ default:
   API_VERSION: 0.0.1
 
   #listener
-  listener_port: 8888
+  listener_port: 8866
 
   logging:
     dynaconf_merge: true
