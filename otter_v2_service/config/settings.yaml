@@ -51,7 +51,7 @@ default:
 
 
 dev:
-  API_VERSION: 0.0.77
+  API_VERSION: 0.0.73
   logging:
     dynaconf_merge: true
     loggers: {}
@@ -62,6 +62,9 @@ dev:
   micro:
     dynaconf_merge: true
   xixi: haha
+  test_key:
+    test_key_layer1:
+      test_key_layer2: test_value
 
 prod:
   API_VERSION: 0.0.71

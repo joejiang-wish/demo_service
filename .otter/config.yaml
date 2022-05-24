@@ -5,3 +5,4 @@ otter-v2-poc:
         - micro
         - logging:root:level
         - API_VERSION
+        - test:test_key_layer1:test_key_layer2
