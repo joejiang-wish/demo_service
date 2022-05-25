@@ -51,12 +51,12 @@ default:
 
 
 dev:
-  API_VERSION: 0.0.72
+  API_VERSION: 0.0.7
   logging:
     dynaconf_merge: true
     loggers: {}
     root:
-      level: INFO
+      level: DEBUG
   extensions:
     dynaconf_merge: true
   micro:

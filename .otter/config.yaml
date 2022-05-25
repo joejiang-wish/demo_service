@@ -1,4 +1,4 @@
-otter-v2-poc:
+otter_v2_service:
     config_dir: otter_v2_service/config
     adaptor: dynaconf
     hot_update_keys:
