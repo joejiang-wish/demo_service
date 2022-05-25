@@ -25,6 +25,7 @@ deploy:
 	APP_NAME=$(APP_NAME) \
 	BRANCH=$(REF) \
 	SHA=$(TAG) \
+	READ_AGENT_FILE=$(READ_AGENT_FILE) \
 	LOAD_FROM_OTTER=true \
 	FLASK_ENV=$(FLASK_ENV) \
 	CONSUL_HOST=http://127.0.0.1:8500 \
@@ -34,6 +35,9 @@ deploy:
 
 deploy-dev:
 	FLASK_ENV=dev make deploy
+
+deploy-dev-agent-file:
+	FLASK_ENV=dev READ_AGENT_FILE=true make deploy
 
 deploy-prod:
 	FLASK_ENV=prod make deploy
