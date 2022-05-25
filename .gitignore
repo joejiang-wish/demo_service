@@ -104,3 +104,4 @@ HEAD_SHA1
 
 dist
 *.egg-info
+otter_settings.yaml
