@@ -44,7 +44,7 @@ default:
     metrics:
       enabled: true
     apm:
-      enabled: true
+      enabled: false
       enable_rate: 1.0
   micro:
     dynaconf_merge: true
