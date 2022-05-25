@@ -16,6 +16,7 @@ if __name__ == '__main__':
     app.run(host=app.config['listener_host'], port=app.config['listener_port'])
 
 
+
 # If you are running outside of docker:
 # Try running this script by:
 #    >> make local-service
