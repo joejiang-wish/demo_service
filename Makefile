@@ -29,7 +29,7 @@ deploy:
 	FLASK_ENV=$(FLASK_ENV) \
 	CONSUL_HOST=http://127.0.0.1:8500 \
 	OTTER_SERVER_HOST=http://127.0.0.1:8888 \
-	~/repos/wish/POC/deploy-mock/cmd.sh
+	~/repos/wish/POC/mock_deploy/cmd.sh
 	# make restart-consul-watcher
 
 deploy-dev:
