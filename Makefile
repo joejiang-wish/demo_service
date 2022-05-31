@@ -78,3 +78,4 @@ restart-consul-watcher:
 		--env CONSUL_HTTP_ADDR=http://host.docker.internal:8500 \
 		--name otter_consul_watcher \
 		otter_consul_watcher
+
