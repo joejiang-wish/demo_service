@@ -2,3 +2,4 @@
 # as well as adding "--use-deprecated=legacy-resolver" when "pip install".
 #-c constraints.txt
 wish-flask[metrics,prod,apm,sentry]==1.0.19
+python-consul==1.1.0
