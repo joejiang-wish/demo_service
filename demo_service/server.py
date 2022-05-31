@@ -1,11 +1,11 @@
 from wish_flask.creation import create_app, create_api
 
-from otter_v2_service.blueprints.hello import hello_blp
+from demo_service.blueprints.hello import hello_blp
 
 app = create_app(
     __name__,
     # Make sure the service layer classes are imported
-    import_modules=['otter_v2_service.services']
+    import_modules=['demo_service.services']
 )
 api = create_api(app)
 

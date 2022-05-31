@@ -4,8 +4,8 @@ from wish_flask.base.view import WishMethodView
 from wish_flask.base.blueprint import WishBlueprint
 from wish_flask.lib.instance_manager import InstanceManager
 
-from otter_v2_service.schemas.hello import NameQuerySchema, HelloMsgSchema
-from otter_v2_service.services.user_service import UserService
+from demo_service.schemas.hello import NameQuerySchema, HelloMsgSchema
+from demo_service.services.user_service import UserService
 
 hello_blp = WishBlueprint(
     'hello', __name__, url_prefix='/api/hello',

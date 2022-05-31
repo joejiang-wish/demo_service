@@ -1,5 +1,5 @@
 # Service layer for user. To access DAO layer.
-from otter_v2_service.models.user import FakeUser as User
+from demo_service.models.user import FakeUser as User
 from wish_flask.base.service import BaseService
 
 

@@ -1,7 +1,7 @@
 FROM harbor.infra.wish-cn.com/wish/wish_flask/eks-base:latest AS base
 
-ARG proj_name=otter_v2_service
-ARG proj_name_snake=otter_v2_service
+ARG proj_name=demo_service
+ARG proj_name_snake=demo_service
 
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONPATH=/production/$proj_name/current/$proj_name

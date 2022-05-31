@@ -1,12 +1,12 @@
 
 local-service:
-	LOAD_FROM_OTTER=ture CONSUL_HOST=http://127.0.0.1:8500 FLASK_ENV=dev NEED_REGISTER=1 python otter_v2_service/server.py
+	LOAD_FROM_OTTER=ture CONSUL_HOST=http://127.0.0.1:8500 FLASK_ENV=dev NEED_REGISTER=1 python demo_service/server.py
 
 container-up:
 	dev otter-v2-service up
 
 container-service:
-	dev otter-v2-service sh FLASK_ENV=dev NEED_REGISTER=True python otter_v2_service/server.py
+	dev otter-v2-service sh FLASK_ENV=dev NEED_REGISTER=True python demo_service/server.py
 
 build:
 	docker build
@@ -18,10 +18,10 @@ build-base-img:
 
 TAG ?= $(shell git rev-parse HEAD)
 REF ?= $(shell git branch | grep \* | cut -d ' ' -f2)
-APP_NAME ?= otter_v2_service
+APP_NAME ?= demo_service
 
 deploy:
-	REPO_NAME=otter_v2_service \
+	REPO_NAME=demo_service \
 	APP_NAME=$(APP_NAME) \
 	BRANCH=$(REF) \
 	SHA=$(TAG) \

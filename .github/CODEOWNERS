@@ -3,5 +3,5 @@
 
 # By default, all source codes should be tested and approved by QA before merging to master.
 # Please add other owners afterwards.
-otter_v2_service/ @ContextLogic/cn-qa
+demo_service/ @ContextLogic/cn-qa
 
