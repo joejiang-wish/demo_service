@@ -2,8 +2,8 @@ FROM harbor.infra.wish-cn.com/wish/wish_flask/dev-base:latest AS service
 
 USER app
 
-ARG proj_name=otter_v2_service
-ARG proj_name_snake=otter_v2_service
+ARG proj_name=demo_service
+ARG proj_name_snake=demo_service
 RUN mkdir -p /home/app/$proj_name
 
 # We do not have clroot mounted in at build time so we have to copy these in to

@@ -1,7 +1,7 @@
 FROM harbor.infra.wish-cn.com/wish/otter-v2-service/api-base:latest
 
-ARG proj_name=otter_v2_service
-ARG proj_name_snake=otter_v2_service
+ARG proj_name=demo_service
+ARG proj_name_snake=demo_service
 
 COPY . /production/$proj_name/current/$proj_name
 RUN rm -rf /production/$proj_name/current/$proj_name/.git

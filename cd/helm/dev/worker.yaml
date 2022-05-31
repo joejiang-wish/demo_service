@@ -40,4 +40,4 @@ spec:
     args:
       - /bin/bash
       - -c
-      - "/production/otter_v2_service/current/otter_v2_service/bin/entrypoint-worker.sh"
+      - "/production/demo_service/current/demo_service/bin/entrypoint-worker.sh"

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from otter_v2_service.__tests__.utils import my_max, my_min
+from demo_service.__tests__.utils import my_max, my_min
 
 
 def test_max():

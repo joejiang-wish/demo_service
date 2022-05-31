@@ -1,4 +1,4 @@
 #!/bin/sh
 
 # Entrypoint for worker
-exec /production/otter_v2_service/persistent/virtualenv/bin/python /production/otter_v2_service/current/otter_v2_service/otter_v2_service/worker.py
+exec /production/demo_service/persistent/virtualenv/bin/python /production/demo_service/current/demo_service/demo_service/worker.py

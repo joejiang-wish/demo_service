@@ -1,4 +1,4 @@
-# otter_v2_service
+# demo_service
 
 A wish_flask based micro service.
 # Harbor registry login
@@ -21,7 +21,7 @@ export GROUP_ID=`id -g`
 
 1. Get our code bases for your dev environment, git clone the repository.
 
-   You may put this repository anywhere you want, but the suggestion is to put it to `~/ContextLogic/otter_v2_service`
+   You may put this repository anywhere you want, but the suggestion is to put it to `~/ContextLogic/demo_service`
 
 2. Now if you type `dev` in the repo, it shall tell you all your projects that being ready to development.
    ```bash
@@ -103,11 +103,11 @@ After you set up your dev environment, everything is nearly down. The remain thi
 
 The dev tool use `sh` command to run commands in your containers.
 
-For web server, the entry point is usually the `server.py`, you can run the following command to start up otter_v2_service web server.
+For web server, the entry point is usually the `server.py`, you can run the following command to start up demo_service web server.
 
 ```bash
 cd <repo_dir>
-dev otter-v2-service sh FLASK_ENV=dev python otter_v2_service/server.py
+dev otter-v2-service sh FLASK_ENV=dev python demo_service/server.py
 ```
 
 Visit https://otter-v2-service.corp.contextlogic.com/openapi/swagger to test whether the server is ready. Remember to follow the instructions below and setup nginx first.
