@@ -47,7 +47,6 @@ def update_pets(query):
 @hello_blp.unified_rsp(data_clz=HelloMsgSchema)
 def get_app_config():
     from ..server import app
-    print('app.config.to_dict(): ', app.config.to_dict())
     return {'message': app.config.to_dict()}
 
 
