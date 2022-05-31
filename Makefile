@@ -30,12 +30,18 @@ deploy-config:
 	APP_NAME=$(APP_NAME) \
 	BRANCH=$(REF) \
 	SHA=$(TAG) \
-	READ_AGENT_FILE=$(READ_AGENT_FILE) \
 	LOAD_FROM_OTTER=true \
 	ENV=$(FLASK_ENV) \
 	CONSUL_HOST=http://127.0.0.1:8500 \
 	OTTER_SERVER_HOST=http://127.0.0.1:8888 \
-	~/repos/wish/POC/mock_deploy/cmd.sh
+	~/repos/wish/POC/mock_deploy/deploy_config.sh
+
+deploy-dev-config:
+	FLASK_ENV=dev make deploy-config
+
+deploy-prod-config:
+	FLASK_ENV=prod make deploy-config
+
 
 
 deploy:
