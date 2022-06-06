@@ -1,8 +1,3 @@
 demo_service:
     config_dir: demo_service/config
     adaptor: dynaconf
-    hot_update_keys:
-        - micro
-        - logging:root:level
-        - API_VERSION
-        - test:test_key_layer1:test_key_layer2

@@ -67,7 +67,7 @@ dev:
       test_key_layer2: test_value
 
 prod:
-  API_VERSION: 0.0.71
+  API_VERSION: 0.0.72
   # Disable openapi uri for prod env
   OPENAPI_URL_PREFIX:
   extensions:
